@@ -49,7 +49,6 @@ $(document).ready(() => {
     const readCountries = document.getElementsByClassName("section-countries__button")[0];
     const countriesBlock = document.getElementsByClassName("section-countries")[0];
     const countriesItems = document.getElementsByClassName("section-countries__items")[0];
-    //const countryNames = document.getElementsByClassName("section-countries__item")
     const arrayData = []
     const indent = document.getElementById("indent")
     let flagState1 = false;
@@ -487,21 +486,18 @@ $(document).ready(() => {
     });
 
     const modal = document.getElementById("country-modal");
-    const span = document.getElementsByClassName("close")[0];
-    const modalName = document.querySelector(".country-modal-name")
-    const modalCity = document.querySelector(".country-modal__item-title")
-    const nodeForCloning = document.querySelector(".country-modal__items")
-    let petitionLink = document.querySelector(".country-modal__item")
+    const modalName = document.querySelector(".country-modal-name");
+    const modalCity = document.querySelector(".country-modal__item-title");
+    const nodeForCloning = document.querySelector(".country-modal__items");
+    let petitionLink = document.querySelector(".country-modal__item");
      let fragment = new DocumentFragment();
      let counter = 0
 
     $('.section-countries__item').on('click', function (e) {
         e.preventDefault();
         let currentCountry = e.currentTarget.getAttribute("data-country")
-        modal.style.display = "block"
-        
+        modal.style.display = "block"       
         let nameCountry = countries.filter(item => item.country === currentCountry)
-        console.log(countries.map(item => item.country));
         modalName.innerHTML = nameCountry[0].country
         for (item of countries) {
             if (item.country === modalName.innerHTML) {
@@ -531,10 +527,10 @@ $(document).ready(() => {
     $(".close").on('click', function () {
         modal.style.display = "none";
 
-        do {
+        while (counter > 1) {
             counter--
             $(nodeForCloning).find(".cloned").remove();
-        } while (counter > 2)
+        } 
     })
     window.onclick = (event) => {
         const arrLinks = []
