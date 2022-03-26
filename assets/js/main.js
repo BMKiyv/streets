@@ -478,6 +478,26 @@ $(document).ready(() => {
         owlIntendCarousel.trigger('prev.owl.carousel');
     });
 
+    const countriItems = document.querySelector(".section-countries__items");
+    const countryItem = document.querySelector(".section-countries__item");
+    let fragmentCountries = new DocumentFragment()
+
+    countryItem.querySelector("p").innerHTML = countries[0].country
+    countryItem.setAttribute("data-country",`${countries[0].country}`)
+    countryItem.querySelector("img").setAttribute('src',`images/flags/${countries[0].country.toLocaleLowerCase()}.png`)
+    countryItem.querySelector("img").setAttribute('alt',`${countries[0].country.toLocaleLowerCase()}`)
+
+    for (let i=1;i<countries.length; i++) {
+        let countryClone = countryItem.cloneNode(true)
+        fragmentCountries.append(countryClone)
+        countryClone.querySelector("p").innerHTML = countries[i].country
+        countryClone.setAttribute("data-country",`${countries[i].country}`)
+        countryClone.querySelector("img").setAttribute('src',`images/flags/${countries[i].country.toLocaleLowerCase()}.png`)
+        countryClone.querySelector("img").setAttribute('alt',`${countries[i].country.toLocaleLowerCase()}`)
+    }
+
+    countriItems.appendChild(fragmentCountries);
+
     const modal = document.getElementById("country-modal");
     const modalName = document.querySelector(".country-modal-name");
     const modalCity = document.querySelector(".country-modal__item-title");
