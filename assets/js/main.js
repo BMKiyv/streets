@@ -579,4 +579,16 @@ $(document).ready(() => {
             }
         }
     });
+
+    fetch('https://www.weareukraine.info/wp-json/wp/v2/posts/')
+    .then(response => response.json())
+    .then(data => {
+        data.slice(0, 4).map((item) => {
+            $('.section-news__items').append(`<a href="${item.link}" target="_blank" class="section-news__item">
+            <p>${item.title.rendered}</p>
+            <img src="${item.yoast_head_json.og_image[0].url}" alt="">
+        </a>`)
+        });
+    })
+    .catch(err => console.log(err));
 });
