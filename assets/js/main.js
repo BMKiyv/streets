@@ -403,8 +403,8 @@ $(document).ready(() => {
 
     
 
-    indent.style.marginTop = "50px";
-    introSection.style.marginBottom = "25px";
+    indent.style.marginTop = "50px";    //indent helps to hiden text at different sizes of phones
+    introSection.style.marginBottom = "25px";   //analogically :) i know, it`s dumb
 
     const handleClick = event => {
         event.preventDefault()  
@@ -420,7 +420,7 @@ $(document).ready(() => {
       }
       
       document.querySelectorAll(".section-header__anchor").forEach(item => 
-      item.addEventListener("click", handleClick))
+      item.addEventListener("click", handleClick)) //it helps to exactly show hashLinks under header (don`t mine)
 
     readCountries.addEventListener("click",function () {
         if(!flagState1){
@@ -436,7 +436,7 @@ $(document).ready(() => {
             readCountries.innerHTML = "show more";
         }
 
-    })
+    });
 
     readMore.addEventListener('click', function () {
        
@@ -457,7 +457,7 @@ $(document).ready(() => {
              indent.style.marginTop = "50px"
         }
 
-    })
+    });
 
     mobileButton.onclick = function() {
        if (mobileInput.checked) { 
@@ -469,13 +469,6 @@ $(document).ready(() => {
            mobileNav.classList.add('section-header__mobilenav');
         }
     };
-
-   document.querySelectorAll(".section-countries__item").forEach(item=>
-        arrayData.push(item.getAttribute("data-country"))
-    )
-
-
-
 
     $('#carousel-intend .section-carousel__nav-next').click(() => {
         owlIntendCarousel.trigger('next.owl.carousel');
@@ -522,7 +515,7 @@ $(document).ready(() => {
             }
         }
 
-    })
+    }); //rendering cities and href to petitions in modals
 
     $(".close").on('click', function () {
         modal.style.display = "none";
@@ -531,7 +524,8 @@ $(document).ready(() => {
             counter--
             $(nodeForCloning).find(".cloned").remove();
         } 
-    })
+    }); //removing cities and href to petitions from modals
+
     window.onclick = (event) => {
         const arrLinks = []
         for (item of links) {
