@@ -447,11 +447,12 @@ a {
     line-height: 30px;
     margin-bottom: 7px;
     text-transform: uppercase;
+    text-align: center;
 }
 
 .section-news__item img {
     height: 300px;
-    object-fit: cover;
+    object-fit: contain;
 }
 
 .section-news__cta {
