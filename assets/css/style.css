@@ -384,6 +384,7 @@ a {
 
 .section-carousel__item-img {
     height: 220px;
+    object-fit: cover;
 }
 
 .section-carousel__item-flag {
@@ -450,6 +451,7 @@ a {
 
 .section-news__item img {
     height: 300px;
+    object-fit: cover;
 }
 
 .section-news__cta {
@@ -551,6 +553,10 @@ a {
 
 .section-footer__left {
     display: flex;
+}
+
+.section-footer__beit{
+    text-decoration: underline;
 }
 
 .section-carousel__container{
@@ -986,6 +992,9 @@ a {
     .section-intro__images img {
         max-width: 50%;
     margin-bottom: 20px;
+    }
+    .section-steps__item {
+        padding: 65px 25px 25px 25px;
     }
     .section-intro__inner {
         flex-direction: column;

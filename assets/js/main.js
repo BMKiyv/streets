@@ -4,12 +4,20 @@ $(document).ready(() => {
         loop: false,
         margin: 20,
         nav: false,
+        lazyLoad: true,
         slideBy: 3,
         responsive: {
             0: {
-                items: 1
+                items: 1,
+                loop:true,
+                autoplay:true,
+                autoplayHoverPause:true,
+                smartSpeed:800
             },
-            1000: {
+            768: {
+                items: 2
+            },
+            1024: {
                 items: 3
             }
         }
@@ -31,9 +39,16 @@ $(document).ready(() => {
         slideBy: 3,
         responsive: {
             0: {
-                items: 1
+                items: 1,
+                loop:true,
+                autoplay:true,
+                autoplayHoverPause:true,
+                smartSpeed:800
             },
-            1000: {
+            768: {
+                items: 2
+            },
+            1024: {
                 items: 3
             }
         }
@@ -69,6 +84,15 @@ $(document).ready(() => {
             ]
         },
         {
+            country: 'Austria',
+            cities: [
+                {
+                    city: 'Vienna',
+                    link: '#'
+                }
+            ]
+        },
+        {
             country: 'Belgium',
             cities: [
                 {
@@ -86,6 +110,15 @@ $(document).ready(() => {
                 {
                     city: 'Uccle',
                     link: 'https://www.change.org/p/rename-part-of-avenue-de-fr%C3%A9-home-of-the-russian-embassy-in-uccle-to-ukraine-street'
+                }
+            ]
+        },
+               {
+            country: 'Bosnia and Herzegovina',
+            cities: [
+                {
+                    city: 'Sarajevo',
+                    link: 'https://chng.it/MjXmCKH6Vd'
                 }
             ]
         },
@@ -129,6 +162,15 @@ $(document).ready(() => {
                 {
                     city: 'Zagreb',
                     link: 'https://chng.it/WYzNFXKp'
+                }
+            ]
+        },
+                {
+            country: 'Cyprus',
+            cities: [
+                {
+                    city: 'Nicosia',
+                    link: 'https://chng.it/RGxCQ8WG2m'
                 }
             ]
         },
@@ -232,6 +274,15 @@ $(document).ready(() => {
             ]
         },
         {
+            country: 'Iceland',
+            cities: [
+                {
+                    city: 'Reykjavík',
+                    link: 'https://www.change.org/p/breyti%C3%B0-heiti-g%C3%B6tunnar-%C3%BEar-sem-sendir%C3%A1%C3%B0-r%C3%BAsslands-stendur-%C3%AD-%C3%BAkra%C3%ADnustr%C3%A6ti'
+                }
+            ]
+        },
+        {
             country: 'Ireland',
             cities: [
                 {
@@ -258,6 +309,15 @@ $(document).ready(() => {
             ]
         },
         {
+            country: 'Luxembourg',
+            cities: [
+                {
+                    city: 'Luxembourg',
+                    link: '#'
+                }
+            ]
+        },
+        {
             country: 'Malta',
             cities: [
                 {
@@ -267,11 +327,11 @@ $(document).ready(() => {
             ]
         },
         {
-            country: 'Moldova',
+            country: 'Monaco',
             cities: [
                 {
-                    city: 'Chișinău',
-                    link: 'https://chng.it/ZgS6ZqLK'
+                    city: 'Monaco',
+                    link: 'https://chng.it/tTnCrKCzP5'
                 }
             ]
         },
@@ -330,6 +390,15 @@ $(document).ready(() => {
             ]
         },
         {
+            country: 'Serbia',
+            cities: [
+                {
+                    city: 'Belgrade',
+                    link: 'https://chng.it/pBysxNyP'
+                }
+            ]
+        },
+        {
             country: 'Slovakia',
             cities: [
                 {
@@ -339,6 +408,15 @@ $(document).ready(() => {
                 {
                     city: 'Bratislava',
                     link: 'https://chng.it/swnDSGxk'
+                }
+            ]
+        },
+        {
+            country: 'Slovenia',
+            cities: [
+                {
+                    city: 'Ljubljana',
+                    link: '#'
                 }
             ]
         },
@@ -459,8 +537,8 @@ $(document).ready(() => {
     readCountries.addEventListener("click",function () {
         if(!flagState1){
             flagState1 = true;
-            countriesBlock.style.maxHeight = "2400px";
-            countriesItems.style.maxHeight = "2200px";
+            countriesBlock.style.maxHeight = "3200px";
+            countriesItems.style.maxHeight = "3000px";
             readCountries.innerHTML = "show less";
         }
         else {
@@ -614,15 +692,35 @@ $(document).ready(() => {
         }
     });
 
-    fetch('https://www.weareukraine.info/wp-json/wp/v2/posts/')
-    .then(response => response.json())
-    .then(data => {
-        data.slice(0, 4).map((item) => {
-            $('.section-news__items').append(`<a href="${item.link}" target="_blank" class="section-news__item">
-            <p>${item.title.rendered}</p>
-            <img src="${item.yoast_head_json.og_image[0].url}" alt="">
-        </a>`)
-        });
-    })
-    .catch(err => console.log(err));
+    const articlesCategories = [
+        {
+            id: 4,
+            title: 'RUSSIA-UKRAINE WAR',
+        },
+        {
+            id: 11,
+            title: 'Places & Nature',
+        },
+        {
+            id: 8,
+            title: 'Tech & Science',
+        },
+        {
+            id: 9,
+            title: 'History & Culture',
+        }];
+    
+    articlesCategories.map((category) => {
+        fetch('https://www.weareukraine.info/wp-json/wp/v2/posts/?categories=' + category.id + '&per_page=1')
+            .then(response => response.json())
+            .then(data => {
+                data.map((item) => {
+                    $('.section-news__items').append(`<a href="${item.link}" target="_blank" class="section-news__item">
+                <p>${category.title}</p>
+                <img src="${item.yoast_head_json.og_image[0].url}" alt="">
+            </a>`)
+                });
+            })
+            .catch(err => console.log(err));
+    });
 });
