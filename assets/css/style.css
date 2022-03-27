@@ -284,6 +284,8 @@ a {
 }
 .section-countries__item:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    text-decoration: underline;
+    text-underline-offset: 2px;
 }
 
 .section-countries__item a {
@@ -309,11 +311,11 @@ a {
     margin: 0;
 }
 
-.section-countries__item p:hover {
+/* .section-countries__item p:hover {
     text-decoration: underline;
     text-decoration-color: #D4D4D4;
     text-underline-offset: 2px;
-}
+} */
 
 .section-carousel {
     padding: 100px 60px;

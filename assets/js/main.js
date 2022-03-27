@@ -93,19 +93,19 @@ $(document).ready(() => {
             country: 'Bulgaria',
             cities: [
                 {
-                    city: 'Varna',
+                    city: 'Varna (consulate)',
                     link: 'https://chng.it/8yRGnvcJ8L'
                 },
                 {
-                    city: 'Ruse',
+                    city: 'Ruse (consulate)',
                     link: 'https://chng.it/HHjFWLHcNQ'
                 },
                 {
-                    city: 'Sofia',
+                    city: 'Sofia (embassy)',
                     link: 'https://chng.it/vPsWyBnt2t'
                 },
                 {
-                    city: 'Sofia',
+                    city: 'Sofia (consulate)',
                     link: 'https://chng.it/FtSBBJkSGV'
                 }
             ]
@@ -129,6 +129,15 @@ $(document).ready(() => {
                 {
                     city: 'Zagreb',
                     link: 'https://chng.it/WYzNFXKp'
+                }
+            ]
+        },
+        {
+            country: 'Denmark',
+            cities: [
+                {
+                    city: 'Copenhagen',
+                    link: 'https://www.openpetition.eu/petition/online/skift-navn-af-kristianiagade-hjemsted-for-danmarks-russiske-ambassade-til-ukrainsgade'
                 }
             ]
         },
@@ -175,6 +184,14 @@ $(document).ready(() => {
             country: 'Germany',
             cities: [
                 {
+                    city: 'Berlin (Embassy)',
+                    link: 'https://chng.it/mDkPxHWXrV'
+                },
+                {
+                    city: 'Berlin (Consulate)',
+                    link: 'https://chng.it/v9qxyMcCTM'
+                },
+                {
                     city: 'Bonn',
                     link: 'https://chng.it/gLPK6hZsv4'
                 },
@@ -185,6 +202,14 @@ $(document).ready(() => {
                 {
                     city: 'Hamburg',
                     link: 'https://chng.it/5gj5R5vL'
+                },
+                {
+                    city: 'Leipzig',
+                    link: 'https://chng.it/wNSD4zBjwz'
+                },
+                {
+                    city: 'Munich',
+                    link: 'https://www.change.org/p/den-sitz-des-russischen-generalkonsulats-in-m%C3%BCnchen-in-die-ukraine-stra%C3%9Fe-umbenennen?recruiter=982069907&utm_source=share_petition&utm_medium=copylink&utm_campaign=share_petition'
                 }
             ]
         },
@@ -265,6 +290,15 @@ $(document).ready(() => {
                 {
                     city: 'Wellington',
                     link: 'https://www.petitions.nz/demonstrate_solidarity_with_the_people_of_ukraine_by_renaming_messines_road__home_of_new_zealands_russian_embassy__to_ukraine_road'
+                }
+            ]
+        },
+        {
+            country: 'North Macedonia',
+            cities: [
+                {
+                    city: 'Skopje',
+                    link: 'https://chng.it/H6JDGFbX'
                 }
             ]
         },
