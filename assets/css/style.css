@@ -93,6 +93,10 @@ a {
     display: none;
 }
 
+.section-header__anchor {
+    cursor: pointer;
+}
+
 .section-hero {
     background-image: url('../../images/hero_bg.png');
     background-size: cover;
