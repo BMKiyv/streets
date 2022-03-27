@@ -84,28 +84,11 @@ $(document).ready(() => {
             ]
         },
         {
-            country: 'Austria',
-            cities: [
-                {
-                    city: 'Vienna',
-                    link: '#'
-                }
-            ]
-        },
-        {
             country: 'Belgium',
             cities: [
                 {
                     city: 'Antwerpen',
-                    link: 'https://www.change.org/p/rename-jan-van-rijswijcklaan-in-antwerp-to-ukrainian-heroes-street'
-                },
-                {
-                    city: 'Antwerpen',
                     link: 'https://www.change.org/p/antwerp-mayor-s-court-rename-della-faillelaan-street-home-of-belgium-s-russian-consulate-to-ukraine-street'
-                },
-                {
-                    city: 'Brussels',
-                    link: 'https://www.change.org/p/rename-emile-de-motlaan-home-of-russian-visa-center-in-brussels-to-ukraine-street'
                 },
                 {
                     city: 'Uccle',
@@ -152,7 +135,7 @@ $(document).ready(() => {
                 },
                 {
                     city: 'Ottawa',
-                    link: 'https://www.change.org/p/rename-charlotte-street-home-of-canada-s-russian-embassy-in-ottawa-to-ukraine-street'
+                    link: 'https://www.change.org/p/rename-a-part-of-charlotte-street-in-ottawa-to-ukraine-street'
                 }
             ]
         },
@@ -313,7 +296,7 @@ $(document).ready(() => {
             cities: [
                 {
                     city: 'Luxembourg',
-                    link: '#'
+                    link: 'https://chng.it/SB78GcjS'
                 }
             ]
         },
@@ -323,15 +306,6 @@ $(document).ready(() => {
                 {
                     city: 'San Gwann',
                     link: 'https://www.change.org/p/rename-the-street-of-the-russian-embassy-in-malta-to-ukraine-street'
-                }
-            ]
-        },
-        {
-            country: 'Monaco',
-            cities: [
-                {
-                    city: 'Monaco',
-                    link: 'https://chng.it/tTnCrKCzP5'
                 }
             ]
         },
@@ -402,11 +376,11 @@ $(document).ready(() => {
             country: 'Slovakia',
             cities: [
                 {
-                    city: 'Bratislava',
+                    city: 'Bratislava (embassy)',
                     link: 'https://chng.it/HYfKQFf7'
                 },
                 {
-                    city: 'Bratislava',
+                    city: 'Bratislava (consulate)',
                     link: 'https://chng.it/swnDSGxk'
                 }
             ]
@@ -416,7 +390,7 @@ $(document).ready(() => {
             cities: [
                 {
                     city: 'Ljubljana',
-                    link: '#'
+                    link: 'https://chng.it/GPyQY8JPbz'
                 }
             ]
         },
@@ -428,11 +402,11 @@ $(document).ready(() => {
                     link: 'https://chng.it/FfzxNxXN'
                 },
                 {
-                    city: 'Madrid',
+                    city: 'Madrid (embassy)',
                     link: 'https://chng.it/4Vv6Q7Pq'
                 },
                 {
-                    city: 'Madrid',
+                    city: 'Madrid (consulate)',
                     link: 'https://chng.it/FCxhh7wb'
                 }
             ]
@@ -489,14 +463,6 @@ $(document).ready(() => {
                     link: 'https://www.ipetitions.com/petition/rename-green-street-in-san-francisco-to-ukraine-2'
                 },
                 {
-                    city: 'Washington DC (Embassy)',
-                    link: 'https://www.ipetitions.com/petition/ukraine-streets-all-over-the-world'
-                },
-                {
-                    city: 'Washington DC (Consulate)',
-                    link: 'https://www.ipetitions.com/petition/rename-tunlaw-road-in-washington-dc-to-ukraine'
-                },
-                {
                     city: 'Houston',
                     link: 'https://www.ipetitions.com/petition/rename-west-loop-south-in-houston-to-ukraine'
                 }
@@ -515,7 +481,7 @@ $(document).ready(() => {
 
     
 
-    indent.style.marginTop = "50px";    //indent helps to hiden text at different sizes of phones
+    indent.style.marginTop = "50px";    //indent helps to hide text at different sizes of phones
     introSection.style.marginBottom = "25px";   //analogically :) i know, it`s dumb
 
     const handleClick = event => {
