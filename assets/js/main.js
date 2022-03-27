@@ -96,15 +96,6 @@ $(document).ready(() => {
                 }
             ]
         },
-               {
-            country: 'Bosnia and Herzegovina',
-            cities: [
-                {
-                    city: 'Sarajevo',
-                    link: 'https://chng.it/MjXmCKH6Vd'
-                }
-            ]
-        },
         {
             country: 'Bulgaria',
             cities: [
@@ -364,6 +355,15 @@ $(document).ready(() => {
             ]
         },
         {
+            country: 'Bosnia and Herzegovina',
+            cities: [
+                {
+                    city: 'Sarajevo',
+                    link: 'https://chng.it/MjXmCKH6Vd'
+                }
+            ]
+        },
+        {
             country: 'Serbia',
             cities: [
                 {
@@ -485,11 +485,14 @@ $(document).ready(() => {
     introSection.style.marginBottom = "25px";   //analogically :) i know, it`s dumb
 
     const handleClick = event => {
-        event.preventDefault()  
+        event.preventDefault() 
+        console.log(event.target); 
         const headerOffset = 80
         const contentAnchors = document.querySelectorAll(".anchor")
         const href = event.target.getAttribute("href")
-        const elementToScroll = Array.from(contentAnchors).filter(item =>`#${item.getAttribute("id")}` === href) 
+        const dataHref = event.target.getAttribute("data-href")
+        console.log(contentAnchors,href);
+        const elementToScroll = Array.from(contentAnchors).filter(item =>`#${item.getAttribute("id")}` === href || `#${item.getAttribute("id")}` ===dataHref) 
         const elementPosition = elementToScroll[0].offsetTop
         window.scrollTo({
           top: elementPosition - headerOffset,
