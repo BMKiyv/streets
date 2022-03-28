@@ -380,7 +380,7 @@ a {
 
 .section-carousel__item {
     max-width: 450px;
-    height: 450px;
+    height: 475px;
     background-color: #F0F0F0;
     padding-bottom: 90px;
     position: relative;
@@ -953,11 +953,17 @@ a {
     .section-title h3 {
         font-size: 23px;
     }
+    .section-carousel__item {
+        height: 525px;
+    }
 }
 
 @media (min-width:341px) and   (max-width:370px){
     .section-steps__item  {
         width: 320px;
+    }
+    .section-carousel__item {
+        height: 520px;
     }
 }
 
