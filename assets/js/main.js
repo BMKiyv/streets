@@ -126,6 +126,15 @@ $(document).ready(() => {
             ]
         },
         {
+            country: 'Bosnia and Herzegovina',
+            cities: [
+                {
+                    city: 'Sarajevo',
+                    link: 'https://chng.it/MjXmCKH6Vd'
+                }
+            ]
+        },
+        {
             country: 'Canada',
             cities: [
                 {
@@ -359,15 +368,6 @@ $(document).ready(() => {
                 {
                     city: 'Bucharest',
                     link: 'https://chng.it/CRZGkC46kF'
-                }
-            ]
-        },
-        {
-            country: 'Bosnia and Herzegovina',
-            cities: [
-                {
-                    city: 'Sarajevo',
-                    link: 'https://chng.it/MjXmCKH6Vd'
                 }
             ]
         },
