@@ -87,12 +87,20 @@ $(document).ready(() => {
             country: 'Belgium',
             cities: [
                 {
-                    city: 'Antwerpen',
-                    link: 'https://www.change.org/p/antwerp-mayor-s-court-rename-della-faillelaan-street-home-of-belgium-s-russian-consulate-to-ukraine-street'
+                    city: 'Uccle (Embassy)',
+                    link: 'https://chng.it/Ck9bT84z'
                 },
                 {
-                    city: 'Uccle',
-                    link: 'https://www.change.org/p/rename-part-of-avenue-de-fr%C3%A9-home-of-the-russian-embassy-in-uccle-to-ukraine-street'
+                    city: 'Uccle (Consulate)',
+                    link: 'https://chng.it/FYqdXttF'
+                },
+                {
+                    city: 'Antwerpen',
+                    link: 'https://chng.it/sWCFT62W'
+                },
+                {
+                    city: 'Brussels',
+                    link: 'https://chng.it/y2CnknNK'
                 }
             ]
         },
@@ -180,19 +188,19 @@ $(document).ready(() => {
             cities: [
                 {
                     city: 'Lyon',
-                    link: 'https://www.change.org/p/renommer-la-rue-sergent-michel-berthet-%C3%A0-lyon-en-rue-d-ukraine'
+                    link: 'https://chng.it/L6zChHkH'
                 },
                 {
                     city: 'Marseille',
-                    link: 'https://www.change.org/p/renommer-la-rue-ambroise-par%C3%A9-si%C3%A8ge-du-consulat-russe-%C3%A0-marseille-en-rue-d-ukraine'
+                    link: 'https://chng.it/mjSwyGhv'
                 },
                 {
                     city: 'Paris',
-                    link: 'https://www.change.org/p/renommer-le-boulevard-lannes-si%C3%A8ge-de-l-ambassade-de-russie-de-france-en-rue-d-ukraine'
+                    link: 'https://chng.it/XqJS9cXh'
                 },
                 {
                     city: 'Strasbourg',
-                    link: 'https://www.change.org/p/renommer-la-rue-s%C3%A9bastien-brant-si%C3%A8ge-du-consulat-russe-de-france-en-rue-d-ukraine'
+                    link: 'https://chng.it/csH5DYQR'
                 }
             ]
         },
@@ -273,11 +281,11 @@ $(document).ready(() => {
                     link: 'https://chng.it/RzRbdMDg'
                 },
                 {
-                    city: 'Rome',
+                    city: 'Rome (Embassy)',
                     link: 'https://chng.it/jGC2XTch'
                 },
                 {
-                    city: 'Rome',
+                    city: 'Rome (Consulate)',
                     link: 'https://chng.it/ctgHHHjH'
                 }
             ]
