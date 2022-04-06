@@ -156,15 +156,15 @@ $(document).ready(() => {
                 }
             ]
         },
-                {
-            country: 'Cyprus',
-            cities: [
-                {
-                    city: 'Nicosia',
-                    link: 'https://chng.it/RGxCQ8WG2m'
-                }
-            ]
-        },
+        // {
+        //     country: 'Cyprus',
+        //     cities: [
+        //         {
+        //             city: 'Nicosia',
+        //             link: 'https://chng.it/RGxCQ8WG2m'
+        //         }
+        //     ]
+        // },
         {
             country: 'Denmark',
             cities: [
@@ -296,6 +296,10 @@ $(document).ready(() => {
                 {
                     city: 'Rome (Consulate)',
                     link: 'https://chng.it/ctgHHHjH'
+                },
+                {
+                    city: 'Milan',
+                    link: 'https://chng.it/kfFjCzzF'
                 }
             ]
         },
@@ -323,6 +327,19 @@ $(document).ready(() => {
                 {
                     city: 'Podgorica',
                     link: 'https://chng.it/mzCnwKY2'
+                }
+            ]
+        },
+        {
+            country: 'Netherlands',
+            cities: [
+                {
+                    city: 'The Hague (Embassy)',
+                    link: 'https://chng.it/HY8jjG7XJb'
+                },
+                {
+                    city: 'The Hague (Consulate)',
+                    link: 'https://chng.it/8rcCxjnJyS'
                 }
             ]
         },
@@ -383,10 +400,6 @@ $(document).ready(() => {
         {
             country: 'Slovakia',
             cities: [
-                {
-                    city: 'Bratislava (embassy)',
-                    link: 'https://chng.it/HYfKQFf7'
-                },
                 {
                     city: 'Bratislava (consulate)',
                     link: 'https://chng.it/swnDSGxk'
@@ -641,6 +654,8 @@ $(document).ready(() => {
         arrLinks.push(renameButton.innerText)
         if (event.target == modal) {
             modal.style.display = "none";
+            counter--
+            $(nodeForCloning).find(".cloned").remove();
         }
         for (item of arrLinks) {
             if (event.target.innerText == item) {
