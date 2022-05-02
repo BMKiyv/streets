@@ -64,7 +64,6 @@ $(document).ready(() => {
     const readCountries = document.getElementsByClassName("section-countries__button")[0];
     const countriesBlock = document.getElementsByClassName("section-countries")[0];
     const countriesItems = document.getElementsByClassName("section-countries__items")[0];
-    const arrayData = []
     const indent = document.getElementById("indent")
     let flagState1 = false;
     let flagState2 = false;
@@ -74,12 +73,21 @@ $(document).ready(() => {
             country: 'Australia',
             cities: [
                 {
-                    city: 'Griffith',
+                    city: 'Canberra',
                     link: 'https://chng.it/f8MpSGJb'
                 },
                 {
                     city: 'Sydney',
                     link: 'https://chng.it/Bfw2snqk'
+                }
+            ]
+        },
+        {
+            country: 'Austria',
+            cities: [
+                {
+                    city: 'Vienna',
+                    link: 'https://chng.it/yJjt8vHLVY'
                 }
             ]
         },
@@ -438,6 +446,10 @@ $(document).ready(() => {
                 {
                     city: 'Stockholm',
                     link: 'https://chng.it/M9PCykXRkg'
+                },
+                {
+                    city: 'Gothenburg',
+                    link: 'https://www.mittskifte.org/petitions/ukrainska-hjaltars-gata-i-goteborg'
                 }
             ]
         },
@@ -447,6 +459,10 @@ $(document).ready(() => {
                 {
                     city: 'Bern',
                     link: 'https://chng.it/w5svBVZjGt'
+                },
+                {
+                    city: 'Geneva',
+                    link: 'https://chng.it/jKD2YMWH'
                 }
             ]
         },
@@ -465,6 +481,10 @@ $(document).ready(() => {
                 {
                     city: 'London',
                     link: 'https://www.change.org/p/rename-part-of-the-kensington-palace-gardens-to-ukraine-street'
+                },
+                {
+                    city: 'Edinburgh',
+                    link: 'https://you.38degrees.org.uk/petitions/rename-melville-street-home-of-scotland-s-russian-consulate-to-ukraine-street-1'
                 }
             ]
         },
