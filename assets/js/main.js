@@ -279,7 +279,8 @@ $(document).ready(() => {
                     city: 'Reykjavík',
                     link: 'https://www.change.org/p/breyti%C3%B0-heiti-g%C3%B6tunnar-%C3%BEar-sem-sendir%C3%A1%C3%B0-r%C3%BAsslands-stendur-%C3%AD-%C3%BAkra%C3%ADnustr%C3%A6ti'
                 }
-            ]
+            ],
+            renamed:true
         },
         {
             country: 'Ireland',
@@ -451,7 +452,8 @@ $(document).ready(() => {
                     city: 'Gothenburg',
                     link: 'https://www.mittskifte.org/petitions/ukrainska-hjaltars-gata-i-goteborg'
                 }
-            ]
+            ],
+            renamed:true
         },
         {
             country: 'Switzerland',
@@ -600,7 +602,8 @@ $(document).ready(() => {
 
     const countriItems = document.querySelector(".section-countries__items");
     const countryItem = document.querySelector(".section-countries__item");
-    let fragmentCountries = new DocumentFragment()
+    let fragmentCountries = new DocumentFragment();
+    //const renamed = document.querySelector("renamed");
 
     countryItem.querySelector("p").innerHTML = countries[0].country
     countryItem.setAttribute("data-country",`${countries[0].country}`)
@@ -614,6 +617,10 @@ $(document).ready(() => {
         countryClone.setAttribute("data-country",`${countries[i].country}`)
         countryClone.querySelector("img").setAttribute('src',`images/flags/${countries[i].country.toLocaleLowerCase()}.png`)
         countryClone.querySelector("img").setAttribute('alt',`${countries[i].country.toLocaleLowerCase()}`)
+        if(countries[i].renamed){
+            countryClone.querySelector(".renamed").classList.remove('hidden')
+            countryClone.classList.add("disabled")
+        }
     }
 
     countriItems.appendChild(fragmentCountries);
@@ -633,6 +640,9 @@ $(document).ready(() => {
         let nameCountry = countries.filter(item => item.country === currentCountry)
         modalName.innerHTML = nameCountry[0].country
         for (item of countries) {
+            if(item.country === modalName.innerHTML && item.renamed){
+                modal.style.display = "none" 
+            }
             if (item.country === modalName.innerHTML) {
                 if (item.cities.length === 1) {
                     modalCity.innerHTML = item.cities[0].city
