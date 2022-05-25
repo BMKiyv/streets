@@ -179,7 +179,7 @@ $(document).ready(() => {
             cities: [
                 {
                     city: 'Tallinn',
-                    link: 'https://chng.it/b6rvHtJ29g'
+                    link: 'https://kohalik.rahvaalgatus.ee/initiatives/a0bb34aa-e364-48f2-b430-edac05f259c0?language=en#initiative-vote'
                 }
             ]
         },
