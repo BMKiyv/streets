@@ -285,6 +285,7 @@ a {
     width: 28.8%;
     margin-right: 15px;
     margin-bottom: 15px;
+    position: relative;
 }
 .section-countries__item:hover {
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
@@ -313,6 +314,29 @@ a {
     font-size: 20px;
     line-height: 40px;
     margin: 0;
+}
+
+.renamed{
+    display:block;
+    text-decoration: none;
+    position: absolute;
+    width: fit-content;
+    padding: 4px 14px;
+    border-radius: 13px;
+    top: 1px;
+    right: -6px;
+    color: #F8F8F8;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 14px;
+    background: #17CB5F;
+}
+
+.hidden{
+    display: none;
+}
+.disabled{
+    background: rgba(255, 255, 255, 0.5);
 }
 
 /* .section-countries__item p:hover {
@@ -829,7 +853,7 @@ a {
     .section-countries__items {
         margin-top: 20px;
         max-height: 239px;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
     .section-carousel {
         padding: 50px 15px 0;
