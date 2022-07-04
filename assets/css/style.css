@@ -696,6 +696,10 @@ a {
     height: 50px;
 }
 @media (max-width:767px) {
+    .renamed{
+        top: 3px;
+        right: 4px;
+    }
     .section-header {
         padding: 0 15px;
         height: 70px;
