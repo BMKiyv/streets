@@ -63,7 +63,9 @@ $(document).ready(() => {
     const introSection = document.getElementsByClassName("section-intro__text")[0];
     const readCountries = document.getElementsByClassName("section-countries__button")[0];
     const countriesBlock = document.getElementsByClassName("section-countries")[0];
-    const countriesItems = document.getElementsByClassName("section-countries__items")[0];
+    //const countriesItems = document.getElementsByClassName("section-countries__items")[0];
+    const countriItems = document.querySelector(".section-countries__items");
+    const countryItem = document.querySelector(".section-countries__item");
     const indent = document.getElementById("indent")
     let flagState1 = false;
     let flagState2 = false;
@@ -549,13 +551,13 @@ $(document).ready(() => {
         if(!flagState1){
             flagState1 = true;
             countriesBlock.style.maxHeight = "3200px";
-            countriesItems.style.maxHeight = "3000px";
+            countriItems.style.maxHeight = "3000px";
             readCountries.innerHTML = "show less";
         }
         else {
             flagState1 = false;
             countriesBlock.style.maxHeight = "400px";
-            countriesItems.style.maxHeight = "239px";
+            countriItems.style.maxHeight = "239px";
             readCountries.innerHTML = "show more";
         }
 
@@ -601,8 +603,8 @@ $(document).ready(() => {
         owlIntendCarousel.trigger('prev.owl.carousel');
     });
 
-    const countriItems = document.querySelector(".section-countries__items");
-    const countryItem = document.querySelector(".section-countries__item");
+ 
+ 
     let fragmentCountries = new DocumentFragment();
     //const renamed = document.querySelector("renamed");
 

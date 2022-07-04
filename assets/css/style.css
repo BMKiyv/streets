@@ -853,7 +853,7 @@ a {
     .section-countries__items {
         margin-top: 20px;
         max-height: 239px;
-        /* overflow: hidden; */
+        overflow: hidden; 
     }
     .section-carousel {
         padding: 50px 15px 0;
