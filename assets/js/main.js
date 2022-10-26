@@ -133,7 +133,8 @@ $(document).ready(() => {
                     city: 'Sofia (consulate)',
                     link: 'https://chng.it/FtSBBJkSGV'
                 }
-            ]
+            ],
+            renamed:true
         },
         {
             country: 'Bosnia and Herzegovina',
@@ -322,7 +323,8 @@ $(document).ready(() => {
                     city: 'Luxembourg',
                     link: 'https://chng.it/SB78GcjS'
                 }
-            ]
+            ],
+            renamed:true
         },
         {
             country: 'Malta',
@@ -371,7 +373,8 @@ $(document).ready(() => {
                     city: 'Skopje',
                     link: 'https://chng.it/H6JDGFbX'
                 }
-            ]
+            ],
+            renamed:true
         },
         {
             country: 'Poland',
@@ -380,7 +383,8 @@ $(document).ready(() => {
                     city: 'Warsaw',
                     link: 'https://www.petycjeonline.com/zmie_nazw_ulicy_belwederskiej_przy_ktorej_mieci_si_ambasada_i_wydzia_konsularny_federacji_rosyjskiej_w_warszawie_na_ulic_ukrain'
                 }
-            ]
+            ],
+            renamed:true
         },
         {
             country: 'Portugal',
