@@ -1118,3 +1118,7 @@ a {
     z-index: 3;
     background: #fff;
 }
+div.owl-item.active{
+    display: flex;
+    justify-content: center;
+}
