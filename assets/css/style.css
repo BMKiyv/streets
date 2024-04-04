@@ -106,9 +106,10 @@ a {
 
 .section-hero__content {
     position: absolute;
-    top: 185px;
+    top: 50%;
     left: 60px;
     width: 54%;
+    transform: translateY(-50%);
 }
 
 .section-hero__title {
@@ -135,7 +136,9 @@ a {
     opacity: 0.7;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
-
+#about{
+    position: relative;
+}
 
 .section-intro {
     display: flex;
@@ -721,6 +724,7 @@ a {
         background-color: #F0F0F0;
         position: static;
         width: 100%;
+        transform: translateY(0);
     }
     .section-hero__title {
         font-size: 29px;
@@ -858,6 +862,9 @@ a {
         margin-top: 20px;
         max-height: 239px;
         overflow: hidden; 
+    }
+    .section-carousel__item{
+        height: 495px;
     }
     .section-carousel {
         padding: 50px 15px 0;

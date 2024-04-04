@@ -495,7 +495,8 @@ $(document).ready(() => {
                     city: 'Edinburgh',
                     link: 'https://you.38degrees.org.uk/petitions/rename-melville-street-home-of-scotland-s-russian-consulate-to-ukraine-street-1'
                 }
-            ]
+            ],
+            renamed:true
         },
         {
             country: 'USA',
